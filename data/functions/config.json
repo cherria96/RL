@@ -1,0 +1,212 @@
+{
+    "dgsb.xlsx": {
+      "column_names": [
+        "Date", "PS_TS", "PS_VS", "PS_VS%", "HM_in", "M1_in", "M1_temp", "M1_pH",
+        "M1_TS", "M1_VS", "M1_VFA", "M1_Alk", "M1_Efficiency", "M1_OLR", "M1_HRT",
+        "M1_vol", "M1_eff", "M2_TS", "M2_VS", "M2_solids", "M2_return", "M2_eff",
+        "M2_up", "M3_in", "M3_pH", "M3_TS", "M3_VS", "M3_VS%", "M3_solids",
+        "M3_BOD", "M3_TN", "BP", "BPR", "CH4", "CO2", "H2S", "deH2S", "H2S_rm"
+      ],
+      "drop_cols": [
+        "PS_VS%", "HM_in", "M1_Efficiency", "M1_OLR", "M1_HRT",
+        "M2_TS", "M2_VS", "M2_solids", "M2_return", "M2_eff", "M2_up",
+        "M3_in", "M3_pH", "M3_TS", "M3_VS", "M3_VS%", "M3_solids",
+        "M3_BOD", "M3_TN", "BPR", "deH2S", "H2S_rm"
+      ],
+      "use_cols": "A:AL",
+      "output": "dgsb.csv"
+    },
+    "dgsh.xlsx": {
+      "column_names": [
+        "Date", "SL_vol", "FW_in", "PS_TS", "PS_VS", "PS_VS%",
+        "M1_in", "M1_temp", "M1_pH", "M1_TS", "M1_VS", "M1_VS%", "M1_VFA",
+        "M1_Alk", "M1_Efficiency", "M1_OLR", "M1_HRT", "M1_vol", "M1_eff",
+        "M2_TS", "M2_VS", "M2_VS%", "M2_solids", "M2_return", "M2_vol",
+        "BP", "BPR", "CH4", "CO2", "H2S", "deH2S", "H2S_rm"
+      ],
+      "drop_cols": [
+        "PS_VS%", "M1_VS%", "M1_Efficiency", "M1_OLR", "M1_HRT",
+        "M2_TS", "M2_VS", "M2_VS%", "M2_solids", "M2_return", "M2_vol",
+        "BPR", "deH2S", "H2S_rm"
+      ],
+      "use_cols": "A:AF",
+
+      "output": "dgsh.csv"
+    },
+    "dgdsc.xlsx": {
+        "column_names":[
+            "Date","SL_in","SL_TS", "SL_VS", "SL_VS%",
+            "M1_temp", "M1_pH", "M1_TS", "M1_VS", "M1_VS%", "M1_VFA", "M1_Alk", 
+            "M1_efficiency", "M1_OLR", "M1_HRT", "M1_vol", "M1_eff", 
+            "M2_pH", "M2_TS", "M2_VS", "M2_VS%", "M2_solids", "M2_return", 
+            "MI_in", "MI_TS", "MI_VS", "MI_VS%",
+            "MI_temp", "MI_pH", "MI_TS", "MI_VS", "MI_VS%", "MI_VFA", "MI_Alk", 
+            "MI_efficiency", "MI_OLR", "MI_HRT", "MI_vol", "MI_eff", 
+            "MI2_pH", "MI2_TS", "MI2_VS", "MI2_VS%", "MI2_solids", "MI2_return", 
+            "M3_vol", "M3_dig", "M3_TP", "M3_pH", "M3_TS", "M3_VS", "M3_VS%", "M3_solids", "M3_BOD", "M3_TN",
+            "TP_vol", "TP_pH", "TP_TS", "TP_VS", "TP_VS%", "TP_solids",
+            "BP", "BP_use", "BP_boil", "BP_flare", "Mix_CH4", "Mix_CO2", "CH4", "CO2", "H2S", "deH2S",
+            "MI_CH4", "MI_CO2", "MI_H2S", "MI_deH2S"
+
+        ],
+        "drop_cols": [
+            "SL_VS%","M2_pH", "M2_TS", "M2_VS", "M2_VS%", "M2_solids", "M2_return", 
+            "MI_in", "MI_TS", "MI_VS", "MI_VS%",
+            "MI_temp", "MI_pH", "MI_TS", "MI_VS", "MI_VS%", "MI_VFA", "MI_Alk", 
+            "MI_efficiency", "MI_OLR", "MI_HRT", "MI_vol", "MI_eff", 
+            "MI2_pH", "MI2_TS", "MI2_VS", "MI2_VS%", "MI2_solids", "MI2_return", 
+            "M3_vol", "M3_dig", "M3_TP", "M3_pH", "M3_TS", "M3_VS", "M3_VS%", "M3_solids", "M3_BOD", "M3_TN",
+            "TP_vol", "TP_pH", "TP_TS", "TP_VS", "TP_VS%", "TP_solids","BP_use", "BP_boil", "BP_flare","Mix_CH4", "Mix_CO2","deH2S",
+            "MI_CH4", "MI_CO2", "MI_H2S", "MI_deH2S"
+
+        ],
+        "use_cols": "A:BW",
+
+        "output": "dgdsc.csv"
+    },
+    "dgbb.xlsx":{
+      "column_names": [
+            "Date","SL_in","SL_TS", "SL_VS", "SL_VS%",
+            "M1_in", "M1_temp", "M1_pH", "M1_TS", "M1_VS", "M1_VS%", "M1_VFA", "M1_Alk", 
+            "M1_OLR", "M1_HRT", "M1_eff", 
+            "M2_pH", "M2_TS", "M2_VS", "M2_VS%", "M2_solids", "M2_return", "M2_eff",
+            "M3_TS", "M3_VS", "M3_VS%", "M3_solids", "M3_return", 
+            "M4_pH", "M4_TS", "M4_VS", "M4_VS%", "M4_solids", "M4_BOD", "M4_TN", 
+            "BP", "CH4", "CO2", "H2S"
+      ],
+      "drop_cols":[
+        "M2_pH", "M2_TS", "M2_VS", "M2_VS%", "M2_solids", "M2_return", "M2_eff",
+        "M3_TS", "M3_VS", "M3_VS%", "M3_solids", "M3_return", 
+        "M4_pH", "M4_TS", "M4_VS", "M4_VS%", "M4_solids", "M4_BOD", "M4_TN"
+      ],
+      "use_cols": "A:AM",
+      "output":"dgbb.csv"
+    }, 
+    "dgsr.xlsx":{
+      "column_names":[
+        "Date", "FW_in", "FW_temp", "FW_pH", "FW_BOD", "FW_COD", "FW_SS", "FW_TN", "FW_TP", "FW_TS", "FW_VS", "FW_VS%",
+        "MCA_in", "MCA_eff", "MCA_temp", "MCA_pH", "MCA_TS", "MCA_VS", "MCA_VS%", "MCA_VFA", "MCA_Alk", "MCA_VFA/TA", "MCA_OLR", "MCA_efficiency", "MCA_HRT",
+        "MCB_in", "MCB_eff", "MCB_temp", "MCB_pH", "MCB_TS", "MCB_VS", "MCB_VS%", "MCB_VFA", "MCB_Alk", "MCB_VFA/TA", "MCB_OLR", "MCB_efficiency", "MCB_HRT",
+        "MHC_in", "MHC_eff", "MHC_temp", "MHC_pH", "MHC_TS", "MHC_VS", "MHC_VS%", "MHC_VFA", "MHC_Alk", "MHC_VFA/TA", "MHC_OLR", "MHC_efficiency", "MHC_HRT",
+        "MHA_in", "MHA_eff", "MHA_temp", "MHA_pH", "MHA_TS", "MHA_VS", "MHA_VS%", "MHA_VFA", "MHA_Alk", "MHA_VFA/TA", "MHA_OLR", "MHA_efficiency", "MHA_HRT",
+        "MHB_in", "MHB_eff", "MHB_temp", "MHB_pH", "MHB_TS", "MHB_VS", "MHB_VS%", "MHB_VFA", "MHB_Alk", "MHB_VFA/TA", "MHB_OLR", "MHB_efficiency", "MHB_HRT",
+        "BP", "BP_avg", "BP_prod", "BP_use", "BP_flare", "BP_boil", "BP_LNG",
+        "CH4", "CO2", "deH2S", "NH3" 
+      ],
+      "drop_cols":[
+        "FW_in", "BP_avg", "BP_prod", "BP_use", "BP_flare", "BP_boil", "BP_LNG"
+      ],
+      "use_cols": "A:CJ",
+      "output": "dgsr.csv"
+    },
+    "bssg.xlsx":{
+      "columns_to_remove":[
+        "평균", "#3", "#4", "#5", "#6", "#7", "#8"
+      ],
+      "use_cols": "B:BE",
+      "column_names":[
+        "Date", "temp_A", "temp_B", "pH_A", "pH_B", "VFA_A", "VFA_B", "Alk_A", "Alk_B",
+        "HRT", "Q_in", "TS_A", "VS_A", "VS/TS_A", "FS/TS_A", "eff",
+        "TS_B", "VS_B", "VS/TS_B", "FS/TS_B", "efficiency", "sludge", "CH4", "CO2", "H2S", "etc", "FW_Q_in",
+        "BP"
+      ],
+      "drop_cols":[
+        "Alk_A", "Alk_B", "VS/TS_A", "FS/TS_A", "eff", "VS/TS_B", "FS/TS_B", 
+        "efficiency", "sludge", "CO2", "etc", "FW_Q_in"
+      ],
+      "output": "bssg.csv"
+    },
+    "bsgb.xlsx":{
+      "columns_to_remove":[
+        "평균", "#7", "#8"
+      ],
+      "use_cols": "B:BF",
+      "column_names":[
+        "Date", "SL_Q_in",
+        "temp_1", "temp_2", "temp_3", "temp_4", "temp_5", "temp_6", 
+        "pH_1", "pH_2", "pH_3", "pH_4", "pH_5", "pH_6", 
+        "VFA_1", "VFA_2", "VFA_3", "VFA_4", "VFA_5", "VFA_6", 
+        "Alk_1", "Alk_2", "Alk_3", "Alk_4", "Alk_5", "Alk_6", 
+        "HRT", "Q_in", "TS_A", "VS_A", "VS/TS_A", "FS/TS_A", "eff",
+        "TS_B", "VS_B", "VS/TS_B", "FS/TS_B", "efficiency", "sludge", 
+        "CH4", "CO2", "H2S", "etc", "FW_Q_in",
+        "BP"
+      ],
+      "drop_cols":[
+        "VS/TS_A",  "FS/TS_A",  "eff",
+        "VS/TS_B",  "FS/TS_B",  "efficiency",  "sludge",
+        "CO2",  "etc", "FW_Q_in"
+      ],
+      "output": "bsgb.csv"
+    },
+    "bsnb.xlsx":{
+      "columns_to_remove":[
+        "평균", "#3", "#4", "#5", "#6", "#7", "#8"
+      ],
+      "use_cols": "B:BF",
+      "column_names":[
+        "Date", "SL_Q_in",
+        "temp_1", "temp_2",
+        "pH_1", "pH_2", 
+        "VFA_1", "VFA_2", 
+        "Alk_1", "Alk_2", 
+        "HRT", "Q_in", "TS_A", "VS_A", "VS/TS_A", "FS/TS_A", "eff",
+        "TS_B", "VS_B", "VS/TS_B", "FS/TS_B", "efficiency", "sludge", 
+        "CH4", "CO2", "H2S", "etc", "FW_Q_in",
+        "BP"
+      ],
+      "drop_cols":[
+        "VS/TS_A",  "FS/TS_A",  "eff",
+        "VS/TS_B",  "FS/TS_B",  "efficiency",  "sludge",
+        "CO2",  "etc", "FW_Q_in"
+      ],
+      "output": "bsnb.csv"
+    },
+    "bsns.xlsx":{
+      "columns_to_remove":[
+        "평균", "#3", "#4", "#5", "#6", "#7", "#8"
+      ],
+      "use_cols": "B:BF",
+      "column_names":[
+        "Date", "SL_Q_in",
+        "temp_1", "temp_2",
+        "pH_1", "pH_2", 
+        "VFA_1", "VFA_2", 
+        "Alk_1", "Alk_2", 
+        "HRT", "Q_in", "TS_A", "VS_A", "VS/TS_A", "FS/TS_A", "eff",
+        "TS_B", "VS_B", "VS/TS_B", "FS/TS_B", "efficiency", "sludge", 
+        "CH4", "CO2", "H2S", "etc", "FW_Q_in",
+        "BP"
+      ],
+      "drop_cols":[
+        "VS/TS_A",  "FS/TS_A",  "eff",
+        "VS/TS_B",  "FS/TS_B",  "efficiency",  "sludge",
+        "CO2",  "etc"
+      ],
+      "output": "bsns.csv"
+    },
+    "bssy.xlsx":{
+      "columns_to_remove":[
+        "평균", "#5", "#6", "#7", "#8"
+      ],
+      "use_cols": "B:BF",
+      "column_names":[
+        "Date", "SL_Q_in",
+        "temp_1", "temp_2", "temp_3", "temp_4", 
+        "pH_1", "pH_2", "pH_3", "pH_4",
+        "VFA_1", "VFA_2", "VFA_3", "VFA_4", 
+        "Alk_1", "Alk_2", "Alk_3", "Alk_4", 
+        "HRT", "Q_in", "TS_A", "VS_A", "VS/TS_A", "FS/TS_A", "eff",
+        "TS_B", "VS_B", "VS/TS_B", "FS/TS_B", "efficiency", "sludge", 
+        "CH4", "CO2", "H2S", "etc", "FW_Q_in",
+        "BP"
+      ],
+      "drop_cols":[
+        "VS/TS_A",  "FS/TS_A",  "eff",
+        "VS/TS_B",  "FS/TS_B",  "efficiency",  "sludge",
+        "CO2",  "etc"
+      ],
+      "output": "bssy.csv"
+    }
+  }
+  

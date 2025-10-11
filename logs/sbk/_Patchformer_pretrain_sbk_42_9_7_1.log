@@ -1,0 +1,31 @@
+Args in experiment:
+Namespace(random_seed=100, is_training=1, model_id='Patchformer_pretrain_sbk_7_1_36_42_9', model='PatchFormer_pretrain', data='sbk', root_path='./data/', data_path='sbk_ad_selected.csv', features='MS', target='BP', freq='d', checkpoints='./checkpoints/', n_subs=2, seq_len=42, label_len=7, pred_len=9, series_decomposition=True, kernel_size=7, decoder_mode='future_subs', individual=False, fc_dropout=0.1, head_dropout=0.0, patch_len=7, stride=1, padding_patch='end', affine=0, subtract_last=0, embed_type=0, enc_in=11, dec_in=11, c_out=11, d_model=32, n_heads=4, e_layers=3, d_layers=3, d_ff=128, moving_avg=3, factor=1, distil=True, dropout=0.05, embed='fixed', activation='gelu', output_attention=True, do_predict=False, revin=True, wodenorm=False, win_size=100, step=1, optimizer='adam', alpha=0.5, beta=0.5, dp_rank=8, rescale=1, merge_size=2, momentum=0.1, local_rank=0, devices_number=1, use_statistic=False, use_decomp=False, same_smoothing=False, warmup_epochs=0, num_workers=10, itr=1, train_epochs=50, batch_size=32, patience=3, learning_rate=0.001, des='Exp', loss='mse', lradj='type3', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use GPU: cuda:0
+>>>>>>>start training : Patchformer_pretrain_sbk_7_1_36_42_9_PatchFormer_pretrain_sbk_ftMS_sl42_ll7_pl9_dm32_nh4_el3_dl3_df128_fc1_ebfixed_dtTrue_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 2020
+val 640
+test 640
+Epoch: 1 cost time: 1.3656342029571533
+Epoch: 1, Steps: 63 | Train Loss: 0.9650527 Vali Loss: 1.8695399 Test Loss: 1.6466608
+Validation loss decreased (inf --> 1.869540).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2 cost time: 1.3633289337158203
+Epoch: 2, Steps: 63 | Train Loss: 0.7713542 Vali Loss: 1.6666743 Test Loss: 1.6965679
+Validation loss decreased (1.869540 --> 1.666674).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 3 cost time: 1.5790278911590576
+Epoch: 3, Steps: 63 | Train Loss: 0.6174467 Vali Loss: 1.7598816 Test Loss: 1.6019137
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.001
+Epoch: 4 cost time: 1.345033884048462
+Epoch: 4, Steps: 63 | Train Loss: 0.5287392 Vali Loss: 1.8255116 Test Loss: 1.3923455
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0009000000000000001
+Epoch: 5 cost time: 1.455280065536499
+Epoch: 5, Steps: 63 | Train Loss: 0.4674385 Vali Loss: 1.8816946 Test Loss: 1.5479338
+EarlyStopping counter: 3 out of 3
+Early stopping
+Total Training Time: 10.70 seconds
+Total Trainable Parameters: 107,107
+>>>>>>>testing : Patchformer_pretrain_sbk_7_1_36_42_9_PatchFormer_pretrain_sbk_ftMS_sl42_ll7_pl9_dm32_nh4_el3_dl3_df128_fc1_ebfixed_dtTrue_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 640

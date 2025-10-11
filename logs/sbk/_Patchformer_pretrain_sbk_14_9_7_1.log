@@ -1,0 +1,75 @@
+Args in experiment:
+Namespace(random_seed=100, is_training=1, model_id='Patchformer_pretrain_sbk_7_1_8_14_9', model='PatchFormer_pretrain', data='sbk', root_path='./data/', data_path='sbk_ad_selected.csv', features='MS', target='BP', freq='d', checkpoints='./checkpoints/', n_subs=2, seq_len=14, label_len=7, pred_len=9, series_decomposition=True, kernel_size=7, decoder_mode='future_subs', individual=False, fc_dropout=0.1, head_dropout=0.0, patch_len=7, stride=1, padding_patch='end', affine=0, subtract_last=0, embed_type=0, enc_in=11, dec_in=11, c_out=11, d_model=32, n_heads=4, e_layers=3, d_layers=3, d_ff=128, moving_avg=3, factor=1, distil=True, dropout=0.05, embed='fixed', activation='gelu', output_attention=True, do_predict=False, revin=True, wodenorm=False, win_size=100, step=1, optimizer='adam', alpha=0.5, beta=0.5, dp_rank=8, rescale=1, merge_size=2, momentum=0.1, local_rank=0, devices_number=1, use_statistic=False, use_decomp=False, same_smoothing=False, warmup_epochs=0, num_workers=10, itr=1, train_epochs=50, batch_size=32, patience=3, learning_rate=0.001, des='Exp', loss='mse', lradj='type3', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use GPU: cuda:0
+>>>>>>>start training : Patchformer_pretrain_sbk_7_1_8_14_9_PatchFormer_pretrain_sbk_ftMS_sl14_ll7_pl9_dm32_nh4_el3_dl3_df128_fc1_ebfixed_dtTrue_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 2048
+val 668
+test 668
+Epoch: 1 cost time: 1.558154821395874
+Epoch: 1, Steps: 64 | Train Loss: 1.0277934 Vali Loss: 1.9693203 Test Loss: 1.5159287
+Validation loss decreased (inf --> 1.969320).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2 cost time: 1.3786356449127197
+Epoch: 2, Steps: 64 | Train Loss: 0.8925346 Vali Loss: 1.7055819 Test Loss: 1.3061465
+Validation loss decreased (1.969320 --> 1.705582).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 3 cost time: 1.472287893295288
+Epoch: 3, Steps: 64 | Train Loss: 0.7573220 Vali Loss: 1.6220076 Test Loss: 1.2319062
+Validation loss decreased (1.705582 --> 1.622008).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 4 cost time: 1.222991704940796
+Epoch: 4, Steps: 64 | Train Loss: 0.6508023 Vali Loss: 1.4092739 Test Loss: 1.0973636
+Validation loss decreased (1.622008 --> 1.409274).  Saving model ...
+Updating learning rate to 0.0009000000000000001
+Epoch: 5 cost time: 1.1206719875335693
+Epoch: 5, Steps: 64 | Train Loss: 0.5928474 Vali Loss: 1.5979770 Test Loss: 0.9709340
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0008100000000000001
+Epoch: 6 cost time: 1.3616786003112793
+Epoch: 6, Steps: 64 | Train Loss: 0.5278345 Vali Loss: 1.3830802 Test Loss: 0.9364719
+Validation loss decreased (1.409274 --> 1.383080).  Saving model ...
+Updating learning rate to 0.0007290000000000002
+Epoch: 7 cost time: 1.2439935207366943
+Epoch: 7, Steps: 64 | Train Loss: 0.4695891 Vali Loss: 1.4581410 Test Loss: 0.9343914
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0006561000000000001
+Epoch: 8 cost time: 1.3840553760528564
+Epoch: 8, Steps: 64 | Train Loss: 0.4383601 Vali Loss: 1.3657833 Test Loss: 1.0092819
+Validation loss decreased (1.383080 --> 1.365783).  Saving model ...
+Updating learning rate to 0.00059049
+Epoch: 9 cost time: 1.3029732704162598
+Epoch: 9, Steps: 64 | Train Loss: 0.4296938 Vali Loss: 1.3464053 Test Loss: 0.9557341
+Validation loss decreased (1.365783 --> 1.346405).  Saving model ...
+Updating learning rate to 0.000531441
+Epoch: 10 cost time: 1.3646376132965088
+Epoch: 10, Steps: 64 | Train Loss: 0.4039140 Vali Loss: 1.3065686 Test Loss: 0.9863290
+Validation loss decreased (1.346405 --> 1.306569).  Saving model ...
+Updating learning rate to 0.0004782969000000001
+Epoch: 11 cost time: 1.6031146049499512
+Epoch: 11, Steps: 64 | Train Loss: 0.3889253 Vali Loss: 1.3147626 Test Loss: 1.0387874
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0004304672100000001
+Epoch: 12 cost time: 1.2755117416381836
+Epoch: 12, Steps: 64 | Train Loss: 0.3791747 Vali Loss: 1.2508239 Test Loss: 1.0293810
+Validation loss decreased (1.306569 --> 1.250824).  Saving model ...
+Updating learning rate to 0.0003874204890000001
+Epoch: 13 cost time: 1.3944015502929688
+Epoch: 13, Steps: 64 | Train Loss: 0.3701306 Vali Loss: 1.2006675 Test Loss: 0.9660799
+Validation loss decreased (1.250824 --> 1.200668).  Saving model ...
+Updating learning rate to 0.0003486784401000001
+Epoch: 14 cost time: 1.5767524242401123
+Epoch: 14, Steps: 64 | Train Loss: 0.3614525 Vali Loss: 1.2082851 Test Loss: 1.0190105
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0003138105960900001
+Epoch: 15 cost time: 1.5265750885009766
+Epoch: 15, Steps: 64 | Train Loss: 0.3400537 Vali Loss: 1.2062048 Test Loss: 0.9757710
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0002824295364810001
+Epoch: 16 cost time: 1.282444953918457
+Epoch: 16, Steps: 64 | Train Loss: 0.3468662 Vali Loss: 1.3149817 Test Loss: 1.0241954
+EarlyStopping counter: 3 out of 3
+Early stopping
+Total Training Time: 32.69 seconds
+Total Trainable Parameters: 107,107
+>>>>>>>testing : Patchformer_pretrain_sbk_7_1_8_14_9_PatchFormer_pretrain_sbk_ftMS_sl14_ll7_pl9_dm32_nh4_el3_dl3_df128_fc1_ebfixed_dtTrue_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 668
